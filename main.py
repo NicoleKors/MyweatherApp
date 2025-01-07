@@ -19,6 +19,7 @@ if location:
         humidity = data["main"]["humidity"]
         pressure = data["main"]["pressure"]
         wind_speed = data["wind"]["speed"]
+        icon_code = data["weather"][0]["icon"]
 
 
         st.write(f"### תחזית מזג האוויר ב-{city}")
@@ -27,6 +28,9 @@ if location:
         st.write(f"💧 לחות: {humidity}%")
         st.write(f"🔴 לחץ אטמוספירי: {pressure} ")
         st.write(f"🍃 מהירות רוח: {wind_speed} מטר/שנייה")
+
+        icon_url= f"http://openweathermap.org/img/wn/{icon_code}@2x.png"
+        st.image(icon_url, caption = "אייקון מזג אוויר", width = 300)
 
     else:
         st.error("אין מקום כזה בעולם. אנא וודא שהזנת שם נכון")
