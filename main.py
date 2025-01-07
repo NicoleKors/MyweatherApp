@@ -1,15 +1,5 @@
 import streamlit as st
+import requests
 
-st.markdown("""
+st.title("MyWeatherApp 🌤️")
 
-
-#title
-
-##subtitle
-
-- bullet 1
-- bullet 2
-- bullet 3
-
->Amazing Quote
-""")
