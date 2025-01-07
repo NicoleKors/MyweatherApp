@@ -4,7 +4,7 @@ import requests
 st.title("MyWeatherApp 🌤️")
 st.write("בדף זה תוכלו לגלות את תחזית מזג האוויר בכל מקום בעולם !")
 
-location=st.text_input("הזינו את שם העיר:")
+location=st.text_input("הזינו את שם המקום:")
 if location:
     api_key= "4b2ab83e953225c381808309a1881d7c"
     url = f"http://api.openweathermap.org/data/2.5/weather?q={location}&appid={api_key}&units=metric&lang=he"
