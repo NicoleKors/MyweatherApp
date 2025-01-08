@@ -28,7 +28,6 @@ if location:
         st.write(f"💧 לחות: {humidity}%")
         st.write(f"🔴 לחץ אטמוספירי: {pressure} ")
         st.write(f"🍃 מהירות רוח: {wind_speed} מטר/שנייה")
-
         icon_url= f"http://openweathermap.org/img/wn/{icon_code}@2x.png"
         st.image(icon_url, caption = "אייקון מזג אוויר", width = 300)
 
